@@ -137,7 +137,7 @@
       const dx = last.x - first.x;
       const dy = last.y - first.y;
       const closingDistance = Math.sqrt(dx * dx + dy * dy);
-      if (closingDistance > 50) return false;
+      if (closingDistance > 200) return false;
       
       const center = getAveragePoint(points);
       const avgRadius = getAverageRadius(points, center);
@@ -160,7 +160,7 @@
       const dx = last.x - first.x;
       const dy = last.y - first.y;
       const closingDistance = Math.sqrt(dx * dx + dy * dy);
-      if (closingDistance > 50) return false;
+      if (closingDistance > 200) return false;
       
       // Compute the bounding box of the points
       let minX = points[0].x, maxX = points[0].x, minY = points[0].y, maxY = points[0].y;
